@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	MkTemp
-Summary:	File-MkTemp perl module
-Summary(pl):	Modu³ perla File-MkTemp
+Summary:	File::MkTemp perl module
+Summary(pl):	Modu³ perla File::MkTemp
 Name:		perl-File-MkTemp
 Version:	1.0.6
 Release:	6
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-File-MkTemp - Make temporary filename from template.
+File::MkTemp - Make temporary filename from template.
 
 %description -l pl
-File-MkTemp umo¿liwia tworzenie pliku tymczasowego na podstawie
+File::MkTemp umo¿liwia tworzenie pliku tymczasowego na podstawie
 szablonu.
 
 %prep

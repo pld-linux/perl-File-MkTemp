@@ -2,9 +2,9 @@
 Summary:	File-MkTemp perl module
 Summary(pl):	Modu³ perla File-MkTemp
 Name:		perl-File-MkTemp
-Version:	1.0.3
-Release:	3
-Copyright:	GPL
+Version:	1.0.5
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/File/File-MkTemp-%{version}.tar.gz
@@ -32,7 +32,7 @@ rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 
 (
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/File/MkTemp
+  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/File
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
   mv .packlist.new .packlist
 )
@@ -48,6 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc {CHANGES,README}.gz
 
 %{perl_sitelib}/File/MkTemp.pm
-%{perl_sitearch}/auto/File/MkTemp
+%{perl_sitearch}/auto/File/.packlist
 
 %{_mandir}/man3/*

@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	File
-%define	pnam	MkTemp
+%define		pdir	File
+%define		pnam	MkTemp
 Summary:	File::MkTemp - make temporary filename from template
 Summary(pl):	File::MkTemp - tworzenie tymczasowych nazw plików z szablonów
 Name:		perl-File-MkTemp

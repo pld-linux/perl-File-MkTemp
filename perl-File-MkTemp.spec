@@ -2,7 +2,7 @@
 Summary:	File-MkTemp perl module
 Summary(pl):	Modu³ perla File-MkTemp
 Name:		perl-File-MkTemp
-Version:	1.0.5
+Version:	1.0.6
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
@@ -35,7 +35,7 @@ rm -rf $RPM_BUILD_ROOT
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/File
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \

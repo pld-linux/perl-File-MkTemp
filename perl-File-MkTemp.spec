@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	MkTemp
-%include	/usr/lib/rpm/macros.perl
 Summary:	File-MkTemp perl module
 Summary(pl):	Modu³ perla File-MkTemp
 Name:		perl-File-MkTemp
 Version:	1.0.6
-Release:	5
-
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ File-MkTemp umo¿liwia tworzenie pliku tymczasowego na podstawie
 szablonu.
 
 %prep
-%setup -q -n File-MkTemp-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL

@@ -3,7 +3,7 @@ Summary:	File-MkTemp perl module
 Summary(pl):	Modu³ perla File-MkTemp
 Name:		perl-File-MkTemp
 Version:	1.0.6
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl

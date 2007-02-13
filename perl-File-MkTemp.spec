@@ -6,7 +6,7 @@
 %define		pdir	File
 %define		pnam	MkTemp
 Summary:	File::MkTemp - make temporary filename from template
-Summary(pl.UTF-8):   File::MkTemp - tworzenie tymczasowych nazw plików z szablonów
+Summary(pl.UTF-8):	File::MkTemp - tworzenie tymczasowych nazw plików z szablonów
 Name:		perl-File-MkTemp
 Version:	1.0.6
 Release:	8

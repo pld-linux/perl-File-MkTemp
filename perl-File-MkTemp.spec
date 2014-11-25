@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	File
 %define		pnam	MkTemp
+%include	/usr/lib/rpm/macros.perl
 Summary:	File::MkTemp - make temporary filename from template
 Summary(pl.UTF-8):	File::MkTemp - tworzenie tymczasowych nazw plików z szablonów
 Name:		perl-File-MkTemp
@@ -14,8 +14,9 @@ License:	free
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	23bcfab64d97595c89938665038a9fe2
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/File-MkTemp/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

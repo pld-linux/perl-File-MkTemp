@@ -4,7 +4,6 @@
 
 %define		pdir	File
 %define		pnam	MkTemp
-%include	/usr/lib/rpm/macros.perl
 Summary:	File::MkTemp - make temporary filename from template
 Summary(pl.UTF-8):	File::MkTemp - tworzenie tymczasowych nazw plików z szablonów
 Name:		perl-File-MkTemp
